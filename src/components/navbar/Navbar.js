@@ -3,6 +3,11 @@ import {BiSearch} from 'react-icons/bi'
 import {BsPerson} from 'react-icons/bs'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaFacebook, FaInstagram, FaYoutube} from 'react-icons/fa'
+import {AiOutlineClose} from 'react-icons/ai'
+import { IoBedOutline } from "react-icons/io5";
+
+
+
 
 import './NavbarStyles.css'
 
@@ -12,34 +17,33 @@ function Navbar () {
     
     return (
     <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
-        <div className="logo">
-        <h2>Apartments Gržetić</h2>
+        <div className={nav ? 'logo dark' : 'logo'}>
+        <img className="logo-grzetic" src={require('../../assets/logo_novo.png')} />
         </div>
     <ul className="nav-menu">
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>Book</li>
-        <li>Views</li>
+        <li>Apartmani</li>
+        <li>Vodič</li>
+        <li>Galerija</li>
+        <li>Kontakt</li>
+        <li>Rezervacije</li>
     </ul>
     <div className="nav-icons">
-         <BiSearch className ='icon' />
-         <BsPerson className ='icon' />
         </div>
         <div className="hamburger" onClick={handleNav}>
-        <HiOutlineMenuAlt4 className='icon' />
+            {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : <AiOutlineClose className='icon dark' />}
+            
         </div>
         <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
             <ul className="mobile-nav">
-                 <li>Home</li>
-                 <li>Destinations</li>
-                 <li>Travel</li>
-                 <li>Book</li>
-                 <li>Views</li>
+            <li>Apartmani</li>
+            <li>Vodič</li>
+            <li>Galerija</li>
+            <li>Kontakt</li>
+            <li>Rezervacije</li>
             </ul>
             <div className="mobile-menu-bottom">
                 <div className="menu-icons">
-                    <button>Search</button>
+                     <button>Search</button>
                     <button>Account</button>
                 </div>
                 <div className="social-icons">
