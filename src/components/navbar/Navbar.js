@@ -1,28 +1,43 @@
-import React, { useState } from "react";  
+import React, { useState, useEffect } from "react";
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Apartmani from '../../pages/Apartmani';
-
-import { Link } from 'react-router-dom'; // Import Link from React Router
-import './NavbarStyles.css'; // Make sure the path is correct for your styles
+import { NavLink, useLocation } from 'react-router-dom';
+import './NavbarStyles.css'; 
 
 function Navbar() {
     const [nav, setNav] = useState(false);
-    const handleNav = () => setNav(!nav);
+    const location = useLocation();
+
+    const handleNav = () => {
+        setNav(!nav);
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.getElementById("navbar");
+            const sticky = navbar.offsetTop;
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []); // empty dependency array to run only once on mount
 
     return (
-        <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
+        <div className={nav ? 'navbar navbar-bg' : 'navbar'} id="navbar">
             <div className={nav ? 'logo dark' : 'logo'}>
-                <Link to="/"><img className="logo-grzetic" src={require('../../assets/logo_novo.png')} alt="Logo" /></Link>
+                <NavLink to="/"><img className="logo-grzetic" src={require('../../assets/logo_novo.png')} alt="Logo" /></NavLink>
             </div>
             <ul className="nav-menu">
-            <li><Link to="/Apartmani">Apartmani</Link></li>
-            <li><Link to="/galerija">Galerija</Link></li>
-                <li>Kontakt</li>
-                <li>Rezervacije</li>
+                <li><NavLink className="nav-link" activeClassName="active" exact to="/Apartmani">Sobe</NavLink></li>
+                <li><NavLink className="nav-link" activeClassName="active" exact to="/galerija">Galerija</NavLink></li>
+                <li><NavLink className="nav-link" activeClassName="active" exact to="/kontakt">Kontakt</NavLink></li>
+                <li><NavLink className="nav-link" activeClassName="active" exact to="/rezervacije">Rezervacije</NavLink></li>
             </ul>
             <div className="nav-icons">
                 {/* Add your navigation icons here if needed */}

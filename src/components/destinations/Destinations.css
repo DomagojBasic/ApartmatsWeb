@@ -1,0 +1,48 @@
+.destinations {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: aliceblue;
+}
+.destinations h5 {
+    padding: 1rem;
+    font-size: 32px;
+}
+
+.destinations h1 {
+    padding: 2rem;
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-weight: 400;
+    color: #333;
+    font-style: bold;
+    font-family: 'Playfair Display';
+    
+}
+.destinations p {
+    padding: 6rem;
+    font-size: 20px;
+    bottom: 10px; 
+    left: 4rem;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+
+
+
+
+@media screen and (max-width: 940px) {
+    .img-container {
+        --num-cols: 2;
+        --row-height: 200px;
+        --grap: .5rem
+    }
+
+    .span-3 {
+        grid-column: span 2;
+    }
+}

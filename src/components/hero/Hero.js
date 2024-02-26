@@ -11,7 +11,7 @@ function Hero () {
             </video>
             <div className="overlay"></div>
             <div className="content">
-                <h1>APARTMANI GRŽETIĆ - SUŽAN</h1>
+                <h1>KUĆA ZA ODMOR GRŽETIĆ</h1>
                 <h2>Savršena lokacija za odmor</h2>
                 <h2><button className="button"><FaPhoneAlt className ='icon' /> Rezervirajte termin</button></h2>
             </div>
