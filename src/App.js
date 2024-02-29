@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Destinations from './components/destinations/Destinations';
 
-import Apartmani from './pages/Apartmani';
+import Slider from './pages/Slider';
 import Galerija from './pages/Galerija';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/apartmani" element={<Apartmani />} />
+          <Route path="/apartmani" element={<Slider />} />
           <Route path="/galerija" element={<Galerija />} />
           
           {/* Add more routes here if needed */}
@@ -29,7 +29,7 @@ function Home() {
     <div>
       <Hero />
       <Destinations />
-      <Apartmani />
+      <Slider />
       
     </div>
   );
