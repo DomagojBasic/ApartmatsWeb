@@ -34,10 +34,11 @@ function Navbar() {
                 <NavLink to="/"><img className="logo-grzetic" src={require('../../assets/logo_novo.png')} alt="Logo" /></NavLink>
             </div>
             <ul className="nav-menu">
-                <li><NavLink className="nav-link" activeclassname="active" exact to="/Apartmani">Sobe</NavLink></li>
+                <li><NavLink className="nav-link" activeclassname="active" exact to="/">Početna</NavLink></li>
+                <li><NavLink className="nav-link" activeclassname="active" exact to="/oNama">O nama</NavLink></li>
                 <li><NavLink className="nav-link" activeclassname="active" exact to="/galerija">Galerija</NavLink></li>
+                <li><NavLink className="nav-link" activeclassname="active" exact to="/Apartmani">Sobe</NavLink></li>
                 <li><NavLink className="nav-link" activeclassname="active" exact to="/kontakt">Kontakt</NavLink></li>
-                <li><NavLink className="nav-link" activeclassname="active" exact to="/rezervacije">Rezervacije</NavLink></li>
                  
             </ul>
             <div className="nav-icons">

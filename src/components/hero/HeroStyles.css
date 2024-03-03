@@ -47,6 +47,16 @@
     width: 100%;
     margin: 0 auto;
 }
+.button{
+    height: 55px;
+    width: 200px;
+    text-align: center;
+
+
+}
+.icon {
+    height: 20px;
+}
 
 .form input[type=text] {
     border: transparent;
