@@ -49,17 +49,13 @@ function Navbar() {
             </div>
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
                 <ul className="mobile-nav">
-                    <li>Apartmani</li>
-                    <li>Vodič</li>
-                    <li>Galerija</li>
-                    <li>Kontakt</li>
-                    <li>Rezervacije</li>
+                <li><NavLink className="mobile-nav-link" activeclassname="active" exact to="/">Početna</NavLink></li>
+                <li><NavLink className="mobile-nav-link" activeclassname="active" exact to="/oNama">O nama</NavLink></li>
+                <li><NavLink className="mobile-nav-link" activeclassname="active" exact to="/galerija">Galerija</NavLink></li>
+                <li><NavLink className="mobile-nav-link" activeclassname="active" exact to="/Apartmani">Sobe</NavLink></li>
+                <li><NavLink className="mobile-nav-link" activeclassname="active" exact to="/kontakt">Kontakt</NavLink></li>
                 </ul>
                 <div className="mobile-menu-bottom">
-                    <div className="menu-icons">
-                        <button>Search</button>
-                        <button>Account</button>
-                    </div>
                     <div className="social-icons">
                         <FaFacebook className='icon' />
                         <FaInstagram className='icon' />

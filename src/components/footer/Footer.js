@@ -10,6 +10,7 @@ import { CiMail } from "react-icons/ci";
 import './Footer.css';
 
 function Footer() {
+    
  
     return (
         <div className="footer">
