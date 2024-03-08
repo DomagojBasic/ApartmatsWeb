@@ -1,8 +1,9 @@
 .hero {
     width: 100%;
     height: 100vh;
-    color: #fff;
+    color: whitesmoke;
     position: relative;
+    
 }
 
 .overlay {
@@ -13,12 +14,18 @@
     top: 0;
     left: 0;
 }
+.title{
+    margin-top: -6rem;
+    
+}
 
-#video {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    
+   
 }
 
 .hero .content {

@@ -7,6 +7,7 @@ import Onama_home from './components/oNama/Onama_home';
 import Slider from './pages/Slider';
 import Galerija from './pages/Galerija';
 import Footer from './components/footer/Footer';
+import HomeSection  from './components/home_section/HomeSection';
 
 function App() {
   return (
@@ -30,9 +31,8 @@ function Home() {
   return (
     <div>
       <Hero />
-      <Destinations />
-      <Slider />
-      <Footer />
+      <HomeSection />
+
       
     </div>
   );
