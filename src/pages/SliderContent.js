@@ -19,7 +19,8 @@ function SlideContent ({ activeIndex, imageSlider }) {
 
     return (
         <section>
-            <h1 className="h1-slide">Galerija slika</h1>
+            <h2 className="h2-slide">Saznaj više</h2> <h2 className="h2-line">_______________</h2>
+            <h1 className="h1-slide">Pogledajte slike apartmana, pročitajte više detalja o smještaju, saznajte više o otoku i gradu Pagu</h1>
             {slides.map((slide, index) => (
                 <div
                     key={index}

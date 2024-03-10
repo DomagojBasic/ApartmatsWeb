@@ -14,6 +14,7 @@ function Footer() {
  
     return (
         <div className="footer">
+            <div className="blank-space">_</div>
             <ul className="footer-contact">
                 <div><img className="footer-logo" src={require('../../assets/logo_novo.png')} alt="Logo" /></div>
                     <li className="text-contact">Privatna kuća za odmor u Krku, svega nekoliko koraka od plaže. Potpuno opremljeni veliki apartman može primiti do 12 osoba, 

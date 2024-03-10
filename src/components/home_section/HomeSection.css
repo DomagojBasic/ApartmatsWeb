@@ -13,13 +13,17 @@
     font-weight: 800;
 }
 .pitanje1 {
-    padding: 2rem;
+    background-color: var(--primary-dark);
+    color: white;
+    border-radius: 3rem;
+    padding: 1rem;
     font-size: 24px;
     margin-left: 4rem;
     margin-right: 40rem;
 }
 
 .odgovor {
+    margin-top: 1rem;
     font-size: 22px;
     margin-left: 4rem;
     margin-right: 40rem;

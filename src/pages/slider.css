@@ -2,14 +2,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    
 
   }
   
   :root {
-    --heights: 100vh;
+    --heights: 120vh;
     --widths: 100%;
-    background-color:aliceblue
+    background-color:white;
   }
   
   .slider-container {
@@ -18,7 +17,7 @@
     position: relative;
     margin: auto;
     overflow: hidden;
-    bottom: 2em;
+
     
   }
   
@@ -41,6 +40,7 @@
     height: 100%;
     position: absolute;
     object-fit: cover; 
+    
   }
   
   .slide-title,
@@ -91,9 +91,8 @@
     right: 0;
     border-radius: 5px 0px 0px 5px;
   }
-  
 
-  
+
   .slider-container:hover .dot:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
@@ -111,13 +110,33 @@
   }
 
   .h1-slide {
-    font-size: 32px;
+  
+    font-size: 22px;
     font-family: 'Playfair Display';
-    margin-top: 1rem;
+    margin-top: 0rem;
     padding: 2rem;
     text-align: center;
     justify-content: center;
-    background-color: aliceblue;
-   
- 
+    background-color: white;
   }
+
+
+  .h2-slide {
+    
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    font-weight: 100;
+  }
+  
+.h2-line{
+  margin-top: -2rem;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  color: orange;
+}
+
+

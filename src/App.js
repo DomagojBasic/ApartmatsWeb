@@ -34,7 +34,7 @@ function Home() {
       <Hero />
       <HomeSection />
       <Benefits />
-      <Slider />
+      <Footer />
       
     </div>
   );
@@ -43,9 +43,8 @@ function Home() {
 function Onama() {
   return (
     <div>
-      <Onama_home />
-      <Destinations />
-      <Footer />
+      <Navbar />
+     <HomeSection />
       
     </div>
   );
