@@ -6,9 +6,29 @@
     align-items: center;
     padding: 0 1rem;
     z-index: 2;
-    background: #4C5D6D;
     color: white;
-    white-space: nowrap
+    white-space: nowrap;
+    transition: background-color 0.4s ease-in-out;
+
+}
+
+.scrolled {
+    opacity: 0.98;
+    background: var(--primary-dark);
+    
+    .nav-link{
+        color: white;
+    }
+
+    .logo-grzetic {
+        margin-top: 4rem;
+        display: flex;
+        width: 40%;
+            }    
+    .active {
+    color: rgb(75, 142, 249)
+}
+
 
 }
 
@@ -23,6 +43,8 @@
 
 .nav-link{
     color: white;
+    font-weight: 600;
+    
 }
 
 
@@ -38,8 +60,8 @@ li {
 
 .hamburger {
     display: none;
-    position: relative; /* Add this line */
-    z-index: 3; /* Add this line */
+    position: relative; 
+    z-index: 3; 
 }
 
 .mobile-menu {
@@ -48,12 +70,11 @@ li {
 
 
  .logo-grzetic {
+    margin-top: 4rem;
     display: flex;
     width: 40%;
-    background: #4C5D6D;
+   
         }
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;

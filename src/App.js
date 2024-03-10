@@ -8,6 +8,7 @@ import Slider from './pages/Slider';
 import Galerija from './pages/Galerija';
 import Footer from './components/footer/Footer';
 import HomeSection  from './components/home_section/HomeSection';
+import Benefits from './components/benefit/benefit';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function Home() {
     <div>
       <Hero />
       <HomeSection />
-
+      <Benefits />
+      <Slider />
       
     </div>
   );
